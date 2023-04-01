@@ -25,7 +25,6 @@ if ($_POST) {
 if (isset($_SESSION ['errorLogout'])) {
         $errorMessage = $_SESSION ['errorLogout'];
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -49,9 +48,9 @@ if (isset($_SESSION ['errorLogout'])) {
     </header>
     <p>
 <?php
-    if (isset($errorMessage)) {
-        echo $errorMessage;
-    }
+if (isset($errorMessage)) {
+    echo $errorMessage;
+}
 ?>
     </p>
     <form action="" method="post">
@@ -64,6 +63,5 @@ if (isset($_SESSION ['errorLogout'])) {
             <button type="submit">Submit</button>
         </div>
     </form>
-    
 </body>
 </html>

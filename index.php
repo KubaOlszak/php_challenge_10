@@ -3,12 +3,9 @@
 session_start();
 $_SESSION ["errorIndex"] = '';
 
-
 if (empty($_SESSION['login'])) {
     $_SESSION ["errorIndex"] = "Vous n'êtes pas authentifié.";
 }
-
-
 ?>
 
 <!DOCTYPE html>
